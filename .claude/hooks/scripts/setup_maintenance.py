@@ -66,6 +66,8 @@ REQUIRED_SCRIPTS = [
     "validate_translation.py",
     "validate_verification.py",
     "validate_workflow.py",
+    "_sermon_lib.py",
+    "validate_grounded_claim.py",
 ]
 
 # Severity levels

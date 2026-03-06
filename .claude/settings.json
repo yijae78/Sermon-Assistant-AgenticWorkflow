@@ -64,6 +64,16 @@
             "timeout": 10
           }
         ]
+      },
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if test -f \"$CLAUDE_PROJECT_DIR\"/.claude/hooks/scripts/validate_grounded_claim.py; then python3 \"$CLAUDE_PROJECT_DIR\"/.claude/hooks/scripts/validate_grounded_claim.py; fi",
+            "timeout": 10
+          }
+        ]
       }
     ],
     "PreCompact": [
